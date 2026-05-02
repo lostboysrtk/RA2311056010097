@@ -2,7 +2,7 @@
 
 This repository contains the complete implementation for the backend engineering evaluation. It is composed of three primary sub-projects designed to demonstrate modularity, algorithm optimization, and microservice system design.
 
-## 🏗️ System Architecture
+## System Architecture
 
 The project consists of three loosely coupled modules that all interact with the external Evaluation Service.
 
@@ -38,7 +38,7 @@ graph TD
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 1. **`logging_middleware/`**: A reusable, centralized npm package for mapping application logs to a remote logging API.
 2. **`vehicle_maintence_scheduler/`**: A task-scheduling script using the 0/1 Knapsack dynamic programming algorithm to optimally allocate vehicle tasks to maintenance depots.
@@ -47,7 +47,7 @@ graph TD
 
 ---
 
-## ⚙️ Prerequisites
+## Prerequisites
 
 - **Node.js** (v18 or higher recommended)
 - **TypeScript** (Installed locally via dependencies)
@@ -55,7 +55,7 @@ graph TD
 
 ---
 
-## 🛠️ Component Details & Usage
+## Component Details & Usage
 
 ### 1. Logging Middleware (`logging_middleware/`)
 A custom logger built to enforce uniform logging across all applications without relying on built-in console utilities. It pushes log events directly to the external logging service.
@@ -149,7 +149,7 @@ node dist/index.js
 
 ---
 
-## 🔒 Architectural & Coding Constraints Followed
+## Architectural & Coding Constraints Followed
 - **No Comments:** Code has been written to be intrinsically readable with human-style variable naming. No comments exist in the TS files.
 - **Strict Logging:** `console.log` has been entirely avoided in favor of the custom `logging_middleware`.
 - **Modular TypeScript:** Strong typings and isolated scopes across the three sub-projects.
